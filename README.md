@@ -1,6 +1,4 @@
-# ThreadCraft - 3D Shirt Customization Studio 👕✨
-
-![Project Preview](https://via.placeholder.com/800x400.png?text=ThreadCraft+Demo) <!-- Add actual screenshot later -->
+# StyleForge - 3D Shirt Customization Studio 👕✨
 
 A cutting-edge web application that lets users design and visualize custom t-shirts in 3D with real-time previews, AI-generated patterns, and export capabilities.
 
@@ -14,7 +12,6 @@ A cutting-edge web application that lets users design and visualize custom t-shi
 - **Customization Tools**  
   - Color picker with hex code support
   - Texture upload (PNG/JPG/SVG)
-  - AI-generated pattern creation (DALL-E integration)
   - Decal positioning controls
 
 - **Advanced Functionality**  
@@ -46,5 +43,4 @@ A cutting-edge web application that lets users design and visualize custom t-shi
 
 1. **Clone Repository**
    ```bash
-   git clone https://github.com/yourusername/threadcraft.git
-   cd threadcraft
+  git clone https://github.com/Saiteja0101/StyleForge.git
