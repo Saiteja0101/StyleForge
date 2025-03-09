@@ -49,3 +49,7 @@ A cutting-edge web application that lets users design and visualize custom t-shi
 2. **Install Dependencies**
    ```bash
    npm install
+
+3. **Run Development Server**
+   ```bash
+   npm run dev
