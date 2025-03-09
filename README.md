@@ -43,4 +43,9 @@ A cutting-edge web application that lets users design and visualize custom t-shi
 
 1. **Clone Repository**
    ```bash
-  git clone https://github.com/Saiteja0101/StyleForge.git
+    git clone https://github.com/Saiteja0101/StyleForge.git
+
+
+2. **Install Dependencies**
+   ```bash
+   npm install
