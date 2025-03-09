@@ -17,12 +17,6 @@ const Homepage = () => {
     <AnimatePresence className='flex-col'>
       {snap.intro && (
         <motion.section className='home' {...slideAnimation('left')}>
-          <motion.header {...slideAnimation("down")}>
-            <img src="./threejs.png"
-              alt="logo"
-              className='w-8 h-8 object-contain'
-            />
-          </motion.header>
           <motion.div
             className='home-content'
             {...headContainerAnimation}
@@ -31,7 +25,7 @@ const Homepage = () => {
               {...headTextAnimation}
             >
               <h1
-                className="head-text">
+                className="head-text text-xl">
                 LET'S <br className='xl:block hidden' />
                 DO IT.
               </h1>
@@ -51,7 +45,7 @@ const Homepage = () => {
                 type="filled"
                 title="Customized It"
                 handleClick={() => state.intro = false}
-                customStyles='w-fit px-4 py-2.5 font-bold text-sm border-2 border-black'
+                customStyles='w-fit px-4 py-2.5 font-bold text-sm border-2 border-black mb-10'
               />
             </motion.div>
           </motion.div>

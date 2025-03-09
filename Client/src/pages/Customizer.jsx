@@ -8,7 +8,7 @@ import { downloadCanvasToImage, reader } from '../config/helpers';
 import { EditorTabs, FilterTabs, DecalTypes } from '../config/constants'
 import { fadeAnimation, slideAnimation } from '../config/motion';
 import { AIPicker, ColorPicker, CustomButton, FilePicker, Tab } from '../components';
-
+import DownloadButton from '../components/DownloadButton';
 
 const Customizer = () => {
   const snap = useSnapshot(state);
@@ -16,7 +16,7 @@ const Customizer = () => {
   const [prompt, setPrompt] = useState('');
   const [generatingImg, setGeneratingImg] = useState(false);
 
-  const [activeEditorTab, setActiveEditorTab] = useState("");
+  const [activeEditorTab, setActiveEditorTab] = useState(false);
   const [activeFilterTab, setActiveFilterTab] = useState({
     logoShirt: true,
     stylishShirt: false,
@@ -40,10 +40,13 @@ const Customizer = () => {
           generatingImg={generatingImg}
           handleSubmit={handleSubmit}
         />
+        case "download":
+          return <DownloadButton />;
       default:
         return null;
     }
   }
+
 
   const handleSubmit = async (type) => {
     if (!prompt) return alert("please enter a prompt");
@@ -140,7 +143,7 @@ const Customizer = () => {
           <motion.div
             className="absolute z-10 top-5 right-5"
             {...fadeAnimation}
-          >
+            >
             <CustomButton
               type="filled"
               title="Go Back"
